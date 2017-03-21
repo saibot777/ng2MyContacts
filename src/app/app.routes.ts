@@ -1,15 +1,13 @@
-
-import {ModuleWithProviders} from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 import {AddContactComponent} from "./components/add-contact/add-contact.component";
 import {ListContactsComponent} from "./components/list-contacts/list-contacts.component";
-import {AppComponent}          from "./app.component";
+import { LayoutComponent } from './layout.component';
 
 
 const APP_ROUTES : Routes = [
-                                { path: '',redirectTo: '/app', pathMatch: 'full'}, 
-                                { path: 'app', component : AppComponent,
-                                 children:[ 
+                                { path: '' ,redirectTo: '/layout', pathMatch: 'full'},
+                                { path: 'layout', component : LayoutComponent,
+                                 children:[
                                            {
                                                 path: 'list-contacts',
                                                 component : ListContactsComponent,

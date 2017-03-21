@@ -3,7 +3,7 @@
       <a class="navbar-brand" href="#"><img [src] ="getMyPictures()" alt="Smiley face" height="30" width="30" class="img-responsive">My Contacts App</a>
     </div>
     <ul class="nav navbar-nav head-links">
-       <li><a [routerLink]="['/app', {outlets :{'listContacts':['list-contacts']}}]"</a>List Contacts</li>
-       <li><a [routerLink]="['/app', {outlets :{'addContact':['add-contact']}}]"</a>Add Contact</li>
+       <li><a [routerLink]="['/layout', {outlets :{'listContacts':['list-contacts']}}]">List Contacts</a></li>
+       <li><a [routerLink]="['/layout', {outlets :{'addContact':['add-contact']}}]">Add Contact</a></li>
     </ul>
 </nav>

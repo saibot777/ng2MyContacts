@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
 import { AddContactComponent } from './components/add-contact/add-contact.component';
+import { LayoutComponent } from './layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ListContactsComponent,
-    AddContactComponent
+    AddContactComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
