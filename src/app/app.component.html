@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <app-header></app-header>
+    <div class="row">
+        <div class="col-md-6">
+            <router-outlet name="listContacts"></router-outlet>
+        </div>
+        <div class="col-md-6">
+            <router-outlet name="addContact"></router-outlet>
+        </div>
+    </div>
+</div>
+

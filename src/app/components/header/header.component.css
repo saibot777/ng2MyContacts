@@ -1,0 +1,28 @@
+
+
+
+.contact-head{
+    border-radius: 0;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+}
+
+.contact-head ul {
+    float: right;
+}
+
+.contact-head ul li a:hover {
+    background: none;
+}
+
+.navbar-brand>img {
+    float: left;
+}
+
+.head-links li a {
+    color: black;
+}
+
+.head-links li a::visited{
+    background: none;
+}

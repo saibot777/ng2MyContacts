@@ -1,0 +1,30 @@
+.input-group{
+    padding-bottom: 15px;
+}
+
+.add-buttons .col-md-6{
+    text-align: center;
+
+}
+
+.addButton {
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+}
+
+.deleteButton {
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+}
+
+input {
+    border-radius: 0;
+}
+
+span {
+    border-radius:0;
+}
