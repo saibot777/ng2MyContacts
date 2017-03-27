@@ -1,9 +1,12 @@
-<nav class="navbar contact-head">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img [src] ="getMyPictures()" alt="Smiley face" height="30" width="30" class="img-responsive">My Contacts App</a>
-    </div>
-    <ul class="nav navbar-nav head-links">
-       <li><a [routerLink]="['/layout', {outlets :{'listContacts':['list-contacts']}}]">List Contacts</a></li>
-       <li><a [routerLink]="['/layout', {outlets :{'addContact':['add-contact']}}]">Add Contact</a></li>
-    </ul>
-</nav>
+<div class="row">
+  <nav class="navbar contact-head">
+      <div class="navbar-header">
+        <a class="navbar-brand my-navbar-brand" href="#"><img [src] ="getMyPictures()" alt="Smiley face" height="30" width="30" class="img-responsive">My Contacts App</a>
+      </div>
+      <ul class="nav navbar-nav head-links">
+        <li><a [routerLink]="['/layout', {outlets :{'listContacts':['list-contacts']}}]">List Contacts</a></li>
+        <li><a [routerLink]="['/layout', {outlets :{'addContact':['add-contact']}}]">Add Contact</a></li>
+      </ul>
+  </nav>
+</div>
+

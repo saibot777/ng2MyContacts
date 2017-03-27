@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
 import { AddContactComponent } from './components/add-contact/add-contact.component';
 import { LayoutComponent } from './layout.component';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LayoutComponent } from './layout.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    MaterialModule.forRoot(),
     routing,
   ],
   providers: [DevelopersService],

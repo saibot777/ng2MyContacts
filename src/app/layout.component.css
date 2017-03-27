@@ -1,0 +1,15 @@
+
+.list-cont {
+  display: flex;
+}
+
+.list {
+  border: 3px solid green;
+  border-radius: 2px;
+}
+
+.cont {
+  border: 3px solid blue;
+  border-radius: 2px;
+  margin-left: 20px;
+}

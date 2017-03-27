@@ -1,3 +1,7 @@
+.panel {
+-webkit-box-shadow: none;
+}
+
 .developers li{
      list-style: none;
 }
@@ -10,4 +14,12 @@
     border-radius: 0px;
     float: right;
     margin-right: 10px;
+}
+
+.btn-Delete {
+    border: 1px solid green;
+}
+
+.btn-Succes {
+    border: 1px solid red;
 }

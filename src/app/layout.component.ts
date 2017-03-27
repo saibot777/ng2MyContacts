@@ -12,4 +12,9 @@ export class LayoutComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick(event:string){
+    alert(event);
+  }
+
+
 }

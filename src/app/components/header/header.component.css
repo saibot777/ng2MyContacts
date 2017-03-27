@@ -26,3 +26,12 @@
 .head-links li a::visited{
     background: none;
 }
+
+.my-navbar-brand {
+    color: black;
+}
+
+.head-links li:hover,.head-links li:visited {
+   background-color: none!important;
+}
+

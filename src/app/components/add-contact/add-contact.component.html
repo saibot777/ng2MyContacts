@@ -1,28 +1,39 @@
-<div class="row">
-  <div class="col-md-6">
+<div class="panel">
+  <div class="panel-body">
     <div class="input-group">
-      <span class="input-group-addon">Name</span>
-      <input type="text" class="form-control" placeholder="Name">
-   </div>
+          <span class="input-group-addon">Name</span>
+          <input type="text" class="form-control" #developerName placeholder="Name" 
+           (keyup.enter) ="addDeveloper(developerName.value)"
+            developer.value =''>
+    </div>
     <div class="input-group">
       <span class="input-group-addon" >City</span>
-      <input type="text" class="form-control" placeholder="City" >
+      <input type="text" class="form-control" #developerCity placeholder="City"
+  
+      >
     </div>
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon3">State</span>
-      <input type="text" class="form-control" placeholder="State" >
+      <input type="text" class="form-control"  #developerState placeholder="State" >
     </div>
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon3">Mob</span>
-      <input type="text" class="form-control" placeholder="Mob">
+      <input type="text" class="form-control" #developerMob placeholder="Mob">
     </div>
     <div class="row add-buttons">
         <div class="col-md-6">
-               <button type="button" class="btn btn-success addButton">Add</button>
+              <button type="button" class="btn btn-success addButton" 
+              (click)="addDeveloper(developerName.value,developerCity.value,developerState.value,developerMob.value)">Add</button>
         </div>
-         <div class="col-md-6">
-               <button type="button" class="btn btn-warning deleteButton">Delete</button>
+          <div class="col-md-6">
+             <button type="button" class="btn btn-warning deleteButton" (click) = "deleteDeveloper()">Delete</button>
         </div>
     </div>
-  </div>  
-</div>  
+  </div>
+</div>
+
+<ul *ngFor ="let developer of developers">
+  <li>{{developer}}</li>
+</ul>
+
+
