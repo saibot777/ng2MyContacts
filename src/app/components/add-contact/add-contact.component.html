@@ -2,28 +2,28 @@
   <div class="panel-body">
     <div class="input-group">
           <span class="input-group-addon">Name</span>
-          <input type="text" class="form-control" #developerName placeholder="Name" 
-           (keyup.enter) ="addDeveloper(developerName.value)"
-            developer.value =''>
+          <input type="text" class="form-control" [(ngModel)] = "nameName" placeholder="Name" name ="nameName">
+    </div>
+    <div class="input-group">
+          <span class="input-group-addon">Family</span>
+          <input type="text" class="form-control" [(ngModel)] = "familyName" placeholder="Family Name" name ="familyName">
     </div>
     <div class="input-group">
       <span class="input-group-addon" >City</span>
-      <input type="text" class="form-control" #developerCity placeholder="City"
-  
-      >
+      <input type="text" class="form-control" [(ngModel)] = "cityName" placeholder="City">
     </div>
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon3">State</span>
-      <input type="text" class="form-control"  #developerState placeholder="State" >
+      <input type="text" class="form-control"  [(ngModel)] = "stateName" placeholder="State" >
     </div>
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon3">Mob</span>
-      <input type="text" class="form-control" #developerMob placeholder="Mob">
+      <input type="text" class="form-control" [(ngModel)] = "mobName" placeholder="Mob">
     </div>
     <div class="row add-buttons">
         <div class="col-md-6">
               <button type="button" class="btn btn-success addButton" 
-              (click)="addDeveloper(developerName.value,developerCity.value,developerState.value,developerMob.value)">Add</button>
+              (click)="addDeveloper(nameName,familyName,cityName,stateName,mobName)">Add</button>
         </div>
           <div class="col-md-6">
              <button type="button" class="btn btn-warning deleteButton" (click) = "deleteDeveloper()">Delete</button>

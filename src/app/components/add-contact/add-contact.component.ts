@@ -1,4 +1,6 @@
 import { Component,EventEmitter,Output} from '@angular/core';
+import {DevelopersService} from './../../services/developers.service';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-add-contact',
@@ -7,12 +9,31 @@ import { Component,EventEmitter,Output} from '@angular/core';
 })
 export class AddContactComponent{
 
-  constructor() { }
 
-        addDeveloper(developerName:string,developerCity:string,developerState:string,developerMob:number){
+  constructor(private _developers_service : DevelopersService) { }
 
-
+        addDeveloper(nameName:string,familyName:string,cityName:string,stateName:string,mobName:number){
+              let developers = {
+                                  name  : nameName,
+                            familyName  : familyName,
+                                   city : cityName,
+                                  state : stateName,
+                           phone_number : mobName
+                               }
+            this._developers_service.createDeveloper(developers).subscribe(
+              data =>{ 
+                        //refresh the list}
+                       this._developers_service.getDevelopers();
+                       return true;
+                    },
+              error=> {
+                console.error("Error saving the developers!");
+                return Observable.throw(error);
+              }
+            );
         }
+
+        
          
          /*
          developers = [];
